@@ -8,37 +8,37 @@ const ListScreen = () => {
             {
                 key: '1',
                 name: 'Ali',
-                age: '39'
+                age: 39,
             },
             {
                 key: '2',
                 name: 'Mohammed',
-                age: '33'
+                age: 33,
             },
             {
                 key: '3',
                 name: 'Yasser',
-                age: '30'
+                age: 30,
             },
             {
                 key: '4',
                 name: 'Hamood',
-                age: '33'
+                age: 33,
             },
             {
                 key: '5',
                 name: 'Faisal',
-                age: '22'
+                age: 22,
             },
             {
                 key: '6',
                 name: 'Ammar',
-                age: '3'
+                age: 3,
             },
             {
                 key: '7',
                 name: 'Kenan',
-                age: '2'
+                age: 2
             },
         ];
     return (
@@ -75,13 +75,13 @@ const styles = StyleSheet.create({
         marginVertical: 50,
         marginHorizontal: 50,
         fontSize: 20,
-        paddingBottom:10,
-        borderBottomWidth:StyleSheet.hairlineWidth,
+        paddingBottom: 10,
+        borderBottomWidth: StyleSheet.hairlineWidth,
 
     },
     flatList: {
         marginTop: 30,
-        borderBottomColor:'grey',
+        borderBottomColor: 'grey',
 
     }
 });

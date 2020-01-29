@@ -1,20 +1,38 @@
-import React from 'react';
-import { Text, StyleSheet } from 'react-native';
+import React, {Component} from 'react';
+import {Text, StyleSheet, View, Button, TouchableOpacity} from 'react-native';
 
 
 // As a body in html
-const HomeScreen = () => {
-  return <Text style={styles.text}>أهلا وسهلا بالجميع</Text>;
+const HomeScreen = ( {navigation} ) => {
+    const myName = "Ali";
+    return (
+        <View>
+            <Text style={styles.text}>أهلا وسهلا بالجميع</Text>
+            <Button
+                title="GO TO COMPONENTS DEMO"
+                onPress={() => navigation.navigate('Components')}
+            />
+            <Button
+                title="GO TO LIST DEMO"
+                onPress={() => {
+                    navigation.navigate({routeName: 'List'})
+                }}
+            />
+
+
+        </View>
+
+    );
 };
 
 
 //for CSS style
 const styles = StyleSheet.create({
-  text: {
-    fontSize: 30,
-      color:'blue',
-      textAlign:'center'
-  }
+    text: {
+        fontSize: 30,
+        color: 'blue',
+        textAlign: 'center'
+    }
 });
 
 export default HomeScreen;
