@@ -7,19 +7,23 @@ const HomeScreen = ( {navigation} ) => {
     const myName = "Ali";
     return (
         <View>
-            <Text style={styles.text}>أهلا وسهلا بالجميع</Text>
-            <Button
-                title="GO TO COMPONENTS DEMO"
-                onPress={() => navigation.navigate('Components')}
-            />
-            <Button
-                title="GO TO LIST DEMO"
-                onPress={() => {
-                    navigation.navigate({routeName: 'List'})
-                }}
-            />
-
-
+                <Text style={styles.text}>أهلا وسهلا بالجميع</Text>
+                <Button
+                    title="GO TO COMPONENTS DEMO"
+                    onPress={() => navigation.navigate('Components')}
+                />
+                <Button
+                    title="GO TO LIST DEMO"
+                    onPress={() => {
+                        navigation.navigate({routeName: 'List'})
+                    }}
+                />
+                <Button
+                    title="GO TO IMAGE DEMO"
+                    onPress={() => {
+                        navigation.navigate({routeName: 'Image'})
+                    }}
+                />
         </View>
 
     );
