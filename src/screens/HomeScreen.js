@@ -24,6 +24,18 @@ const HomeScreen = ( {navigation} ) => {
                         navigation.navigate({routeName: 'Image'})
                     }}
                 />
+                <Button
+                    title="GO TO COUNTER"
+                    onPress={() => {
+                        navigation.navigate({routeName: 'Counter'})
+                    }}
+                />
+                <Button
+                    title="GO TO COLORS"
+                    onPress={() => {
+                        navigation.navigate({routeName: 'Color'})
+                    }}
+                />
         </View>
 
     );

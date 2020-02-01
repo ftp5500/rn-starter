@@ -11,9 +11,22 @@ const ImageScreen = () => {
 
     return (
         <View>
-            <ImageDetail title="Forest" imageSource={require(pic3)}/>
-            <ImageDetail title="Mountain" imageSource={require(pic2)}/>
-            <ImageDetail title="Beach" imageSource={require(pic1)}/>
+
+            <ImageDetail
+                title="Forest"
+                imageSource={require(pic3)}
+                imageScore="720"
+            />
+            <ImageDetail
+                title="Mountain"
+                imageSource={require(pic2)}
+                imageScore="1024"
+            />
+            <ImageDetail
+                title="Beach"
+                imageSource={require(pic1)}
+                imageScore="1440"
+            />
         </View>
     )
 };
